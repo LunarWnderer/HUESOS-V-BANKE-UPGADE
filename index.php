@@ -1,6 +1,5 @@
-php
 <?php
-$smiley_url = "http://python_backend.local/";
+$smiley_url = getenv('PYTHON_BACKEND_URL');
 $smiley = file_get_contents($smiley_url);
 
 $html = "<!DOCTYPE html>\n";
